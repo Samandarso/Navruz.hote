@@ -1,0 +1,280 @@
+.contact_container {
+    width: 100%;
+    height: 81px;
+    background-color: rgba(128, 128, 128, 0.381);
+    overflow: hidden;
+}
+
+.contact {
+    width: 82%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 140px;
+    margin-top: 1.5px;
+    background-color: #fff;
+}
+
+.contact p {
+    font-size: 21px;
+    color: #B99470;
+    font-weight: 600;
+}
+
+.back {
+    width: 100%;
+    height: 400px;
+    background: url(https://navruzhotel.uz/_nuxt/img/bg.818f631.jpg);
+    background-size: cover;
+    padding: 48px 0 0;
+}
+
+.booking_container {
+    width: 100%;
+    height: auto;
+}
+
+.booking {
+    width: auto;
+    margin: 0 122px;
+    padding: 48px 15px;
+
+    h1 {
+        font-size: 41px;
+        margin: 0 0 48px;
+        color: #B99470;
+    }
+
+    h2 {
+        margin: 0;
+        margin-top: 40px;
+        margin-bottom: 16px;
+        font-size: 20px;
+        color: #B99470;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+
+        li {
+            margin-top: 15px;
+            font-size: 16px;
+        }
+    }
+
+    p {
+        margin: 16px 0 48px;
+        font-size: 16px;
+    }
+}
+
+.tl_container {
+    width: auto;
+    background-color: #F5F5F5;
+}
+
+.hnp_nav {
+    width: 100%;
+    padding: 16px 0;
+    
+    h1 {
+        width: 100%;
+        text-align: center;
+        font-size: 24px;
+        color: #666666CC;
+        margin: 0;
+    }
+}
+
+.hcp {
+    width: auto;
+    padding: 16px 40px 0;
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+
+    img {
+        width: 25px;
+        height: 22px;
+        padding: 6px;
+        background-color: #F5F5F5;
+        transition: 500ms;
+        cursor: pointer;
+    }
+
+    span {
+        padding: 6px;
+        color: #666666;
+        font-weight: 600;
+        transition: 500ms;
+        background-color: #F5F5F5;
+        cursor: pointer;
+    }
+}
+
+.hcp img:hover, .hcp span:hover {
+    background-color: #fff;
+}
+
+.search_container {
+    width: auto;
+    padding: 25px 40px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.search_filter {
+    width: 688px;
+    height: 88px;
+    display: flex;
+}
+
+.search_left {
+    width: 328px;
+    height: 72px;
+    margin: 0 16px 16px 0;
+    font-size: 18px;
+    color: #666666;
+
+    .date {
+        width: 308px;
+        height: 38px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 10px 0px;
+        border: 1px solid #666666b6;
+        padding: 0 0 0 16px;
+    }
+}
+
+.search_right {
+    width: 328px;
+    height: 72px;
+    margin: 0 16px 16px 0;
+    font-size: 18px;
+    color: #666666;
+    display: flex;
+    align-items: end;
+    margin-top: 33px;
+
+    .date {
+        width: 308px;
+        height: 38px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 10px 0px;
+        padding: 0 0 0 16px;
+        border: 1px solid #666666aa;
+
+    }
+}
+
+.date p {
+    padding: 10px;
+    margin: 0;
+}
+
+.date:hover {
+    box-shadow: inset 0 0 0 0 transparent, 0 0 0 1px #666, 0 0 0 3px hsla(0,0%,40%,.16);
+}
+
+#spn span {
+    display: flex;
+    flex-direction: column;
+
+    span {
+        font-size: 14px;
+        color: #66666676;   
+    }
+}
+
+.extra {
+    width: auto;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.search_btn {
+    width: auto;
+    height: 200px;
+    margin: 30px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    span {
+        width: 688px;
+        height: 48px;
+        font-size: 18px;
+        color: #666666;
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+
+        div {
+            width: 30px;
+            height: 30px;
+            background-color: #fff;
+            margin-right: 10px;
+            border: 1px solid gray;
+            border-radius: 4px;
+        }
+    }
+
+    button {
+        width: 688px;
+        height: 56px;
+        border: none;
+        background-color: #B99470;
+        font-size: 22px;
+        color: #fff;
+        margin-bottom: 90px;
+    }
+}
+
+.card_map {
+    width: auto;
+    padding: 15px;
+    margin: 0 122.4px;
+    font-size: 18px;
+
+    iframe {
+        border-radius: 10px;
+        border: none;
+    }
+}
+
+.credent_container {
+    width: auto;
+    padding: 15px;
+    margin: 0 122.4px;
+    font-size: 18px;
+}
+
+.credent {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    margin: 16px 0 0;
+    font-size: 14px;
+
+    a {
+        text-decoration: none;
+        color: #B99470;
+    }
+}
+
+.span:last-child span {
+    margin: 0 0 0 16px;
+}
