@@ -130,6 +130,11 @@
         background-color: #B99470;
         color: #fff;
         font-size: 16px;
+        transition: 500ms;
+    }
+
+    button:hover {
+        background-color: #4B3B2D;
     }
 }
 

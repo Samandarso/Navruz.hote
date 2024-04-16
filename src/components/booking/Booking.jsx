@@ -37,7 +37,7 @@ const Booking = () => {
                   </div>
                 </div>
                 <div className={s.search_left}>
-                  <span>{t("Check-in date")}</span>
+                  <span>{t("Check-out date")}</span>
                   <div className={s.date}>
                     <span>{t("14 April 2024")}</span>
                     <p>🗓️</p>
@@ -62,7 +62,7 @@ const Booking = () => {
               </div>
             </div>
             <div className={s.search_btn}>
-              <span><div></div> {t("I have a promo code")}</span>
+              <span><div></div> {t("- - - -  I have a promo code")}</span>
               <button>{t("CHECK AVAILITY")}</button>
             </div>
           </div>

@@ -1,0 +1,13 @@
+.container {
+    width: auto;
+    height: 270px;
+    text-align: center;
+    /* padding: 0 138px; */
+}
+
+.plate {
+    width: 408px;
+    height: max-content;
+    margin: 0 6px;
+}
+

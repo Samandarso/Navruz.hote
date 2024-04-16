@@ -447,6 +447,7 @@
         border-radius: 5px;
         cursor: pointer;
         margin: 24px 505px 0;
+        transition: 500ms;
 
         a {
             width: 228px;

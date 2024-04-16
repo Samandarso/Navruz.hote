@@ -21,3 +21,199 @@
     color: #B99470;
     font-weight: 600;
 }
+
+.back {
+    width: 100%;
+    height: 400px;
+    background: url(https://navruzhotel.uz/_nuxt/img/bg.ca0e189.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 48px 0 0;
+}
+
+.rooms_container {
+    width: 100%;
+    height: auto;
+}
+
+.rooms {
+    width: auto;
+    margin: 0 122px;
+    padding: 48px 15px;
+
+    h1 {
+        font-size: 41px;
+        margin: 0 ;
+        color: #B99470;
+    }
+}
+
+.slide_container {
+    width: 100%;
+    height: auto;
+}
+
+.slide {
+    width: 100%;
+    height: auto;
+    padding: 48px 0 0;
+
+    h2 {
+        font-size: 35px;
+        margin: 0 0 20px;
+    }
+
+    p {
+        font-size: 20.5px;
+        margin: 0;
+        color: #484848;
+        margin: 0 0 35px;
+    }
+
+    .btn {
+        width: 240px;
+        height: 50px;
+        margin: 40px 0 0;
+        padding: 1px 6px;
+        font-size: 18px;
+        border: none;
+        color: #fff;
+        background-color: #B99470;
+        border-radius: 6px;
+        transition: 500ms;
+    }
+
+    .btn:hover {
+        background-color: gold;
+    }
+}
+
+.search {
+    width: auto;
+    margin-top: 40px;
+    padding: 0 22px;
+    border-radius: 15px;
+    box-shadow: 3px 3px 8px 8px #48484822;
+}
+
+.wraper {
+    width: auto;
+    padding: 24px 1px;
+    display: flex;
+    align-items: center;
+}
+
+.top_block {
+    width: auto;
+    margin: 0 24px 0 0;
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+        font-size: 23px;
+        margin: 0;
+        color: #000000;
+    }
+
+    span {
+        height: 15px;
+        font-size: 12px;
+        margin: 6px 0 0;
+        color: #484848;
+    }
+}
+
+.main_block {
+    width: auto;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-left: 62px; 
+
+    button {
+        width: 173px;
+        height: 42px;
+        border: none;
+        background-color: #B99470;
+        color: #fff;
+        font-size: 16px;
+        transition: 500ms;
+    }
+
+    button:hover {
+        background-color: #4B3B2D;
+    }
+}
+
+.date {
+    width: 228px;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 8px 8px 5px;
+    border: 1px solid #4848486f;
+    border-radius: 4px;
+
+    p {
+        margin: 0;
+    }
+
+    .date_span {
+        width: auto;
+        line-height: 0px;
+
+        span {
+            font-size: 12px;
+            color: #484848;
+        }
+
+        p {
+            font-size: 16px;
+            color: #000000;
+            font-weight: 600;
+            margin: 16px 0;
+        }
+    }
+
+    .usr {
+        color: #B99470;
+    }
+}
+
+.card_map {
+    width: auto;
+    padding: 15px;
+    margin: 0 122.4px;
+    font-size: 18px;
+
+    iframe {
+        border-radius: 10px;
+        border: none;
+    }
+}
+
+.credent_container {
+    width: auto;
+    padding: 15px;
+    margin: 0 122.4px;
+    font-size: 18px;
+}
+
+.credent {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    margin: 16px 0 0;
+    font-size: 14px;
+
+    a {
+        text-decoration: none;
+        color: #B99470;
+    }
+}
+
+.span:last-child span {
+    margin: 0 0 0 16px;
+}

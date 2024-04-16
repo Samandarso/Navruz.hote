@@ -220,6 +220,8 @@
         display: flex;
         align-items: center;
         margin-bottom: 10px;
+        position: relative;
+        
 
         div {
             width: 30px;
@@ -228,6 +230,7 @@
             margin-right: 10px;
             border: 1px solid gray;
             border-radius: 4px;
+            position: absolute;
         }
     }
 
@@ -239,6 +242,11 @@
         font-size: 22px;
         color: #fff;
         margin-bottom: 90px;
+        transition: 500ms;
+    }
+
+    button:hover {
+        background-color: #4B3B2D;
     }
 }
 
