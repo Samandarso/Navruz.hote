@@ -20,8 +20,8 @@ const About = () => {
         <div className={s.about}>
           <h2>{t("About us")}</h2>
           <p><span>{t("Cozy and comfortable Navruz Hotel Tashkent")}</span> {t("is located in the city center and first opened its doors to hotel guests in 2018.")}</p>
-          <p><span>{("The hotel offers 128 rooms")}</span> {t("of various categories for a comfortable stay, equipped with modern technology. Each room has a smart TV, mini fridge, air conditioning, Wi-Fi and a secure safe.")}</p>
-          <p><span>{("A spacious conference room,")}</span> {t("bar, restaurant, gym, billiard room, outdoor pool, sauna and a cozy courtyard are available for the Guests of the hotel.")}</p>
+          <p><span>{t("The hotel offers 128 rooms")}</span> {t("of various categories for a comfortable stay, equipped with modern technology. Each room has a smart TV, mini fridge, air conditioning, Wi-Fi and a secure safe.")}</p>
+          <p><span>{t("A spacious conference room,")}</span> {t("bar, restaurant, gym, billiard room, outdoor pool, sauna and a cozy courtyard are available for the Guests of the hotel.")}</p>
           <h2>{t("Why we are?")}</h2>
           <div className={s.ul}>
             <ul>

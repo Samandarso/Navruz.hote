@@ -1,14 +1,35 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import s from './Home.module.css'
 import { FaUser } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
 import { HiMiniXMark } from 'react-icons/hi2';
 import { BsArrowRight } from 'react-icons/bs';
+import { firestore } from '../firebase'
+import { addDoc, collection } from 'firebase/firestore';
 
 
 const Home = () => {
-
   const { t } = useTranslation();
+  
+  const messageRef = useRef();
+  const ref = collection(firestore, "messages")
+
+  const handleSave = async (e) => {
+    e.preventDefault();
+    console.log(messageRef.current.value);
+
+    let data = {
+      message:messageRef.current.value,
+    }
+
+    try {
+      addDoc(ref, data)
+    }
+    catch (e) {
+      console.log(e);
+    }
+    
+  }
 
   return (
     <div className={s.container}>
@@ -31,9 +52,9 @@ const Home = () => {
         <div className={s.container_of}>
            <div className={s.cozy}>
             <h1>{t("Cozy hotel for business and leisure in the business center of Tashkent")}</h1>
-            <button>{t("Book")}</button>
+            <a href="/rooms"><button>{t("Book")}</button></a>
            </div>
-           <form action="#" className={s.search}>
+           <form action="#" onSubmit={handleSave} className={s.search}>
             <div className={s.top_b}>
               <b>{t("Book online")}</b>
               <p>{t("Get your guaranteed accommodation RIGHT NOW!")}</p>
@@ -42,26 +63,26 @@ const Home = () => {
               <div className={s.date}>
                 <div className={s.check}>
                   <p>{t("Check-in")}</p>
-                  <p>09/04/2024</p>
+                  <input type="text" ref={messageRef} placeholder='09/04/2024'/>
                 </div>
                 <p className={s.icon}>🗓️</p>
               </div>
               <div className={s.date}>
                 <div className={s.check}>
                   <p>{t("Check-in")}</p>
-                  <p>09/04/2024</p>
+                  <input type="text" ref={messageRef} placeholder='10/04/2024'/>
                 </div>
                 <p className={s.icon}>🗓️</p>
               </div>
               <div className={s.date}>
                 <div className={s.check}>
                   <p>{t("Guest")}</p>
-                  <p>{t("2 adults, 0 children")}</p>
+                  <input type="text" ref={messageRef} placeholder={t("2 adults, 0 children")}/>
                 </div>
                 <p className={s.icon}><FaUser/></p>
               </div>
               <div className={s.btn}>
-                <button>{t("FIND ROOM")}</button>
+                <button type='submit'>{t("FIND ROOM")}</button>
               </div>
             </div>
            </form>

@@ -120,6 +120,11 @@
     width: 480px;
     height: 238px;
     margin: 0 24px 0 0;
+
+}
+
+a {
+    text-decoration: none;
 }
 
 .cozy h1 {
@@ -197,6 +202,14 @@
     border-radius: 5px;
     padding: 6px;
     color: gray;
+
+    .check input {
+        width: 150px;
+        height: 20px;
+        border: none;
+        outline: none;
+        background-color: rgba(128, 128, 128, 0.13);
+    }
 }
 
 .date p {

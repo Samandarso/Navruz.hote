@@ -29,7 +29,7 @@ const Facilities = () => {
       <div className={s.back}></div>
       <div className={s.facilities_container}>
         <div className={s.facilities}>
-          <h1>{t("Rooms")}</h1>
+          <h1>{t("Facilities ")}</h1>
           <div className={(s.slide_container)}>
             <div className={s.slide}>
               <h2>{t("Outdoor swimming pool")}</h2>
