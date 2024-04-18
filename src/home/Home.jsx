@@ -11,15 +11,19 @@ import { addDoc, collection } from 'firebase/firestore';
 const Home = () => {
   const { t } = useTranslation();
   
-  const messageRef = useRef();
+  const ariveRef = useRef();
+  const movegeRef = useRef();
+  const personRef = useRef();
   const ref = collection(firestore, "messages")
 
   const handleSave = async (e) => {
     e.preventDefault();
-    console.log(messageRef.current.value);
+    console.log(ariveRef.current.value);
 
     let data = {
-      message:messageRef.current.value,
+      arive:ariveRef.current.value,
+      move:movegeRef.current.value,
+      person:personRef.current.value,
     }
 
     try {
@@ -28,7 +32,7 @@ const Home = () => {
     catch (e) {
       console.log(e);
     }
-    
+
   }
 
   return (
@@ -63,21 +67,21 @@ const Home = () => {
               <div className={s.date}>
                 <div className={s.check}>
                   <p>{t("Check-in")}</p>
-                  <input type="text" ref={messageRef} placeholder='09/04/2024'/>
+                  <input  type="text" ref={ariveRef} placeholder='09/04/2024'/>
                 </div>
                 <p className={s.icon}>🗓️</p>
               </div>
               <div className={s.date}>
                 <div className={s.check}>
                   <p>{t("Check-in")}</p>
-                  <input type="text" ref={messageRef} placeholder='10/04/2024'/>
+                  <input type="text" ref={movegeRef} placeholder='10/04/2024'/>
                 </div>
                 <p className={s.icon}>🗓️</p>
               </div>
               <div className={s.date}>
                 <div className={s.check}>
                   <p>{t("Guest")}</p>
-                  <input type="text" ref={messageRef} placeholder={t("2 adults, 0 children")}/>
+                  <input type="text" ref={personRef} placeholder={t("2 adults, 0 children")}/>
                 </div>
                 <p className={s.icon}><FaUser/></p>
               </div>

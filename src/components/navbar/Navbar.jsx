@@ -45,9 +45,9 @@ const Navbar = () => {
             </li>
             <li>
                 <select onChange={(e) => changeLanguage(e.target.value)} value={selectedLanguage}>
+                    <option value="en">🏴EN</option>
                     <option value="ru">🏴RU</option>
                     <option value="uz">🏳️UZ</option>
-                    <option value="en">🏴EN</option>
                 </select>
             </li>
         </ul>
