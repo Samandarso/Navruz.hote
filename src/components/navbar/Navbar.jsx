@@ -7,7 +7,7 @@ import { useState } from 'react';
 const Navbar = () => {
 
     const { t, i18n } = useTranslation();
-  const [selectedLanguage, setSelectedLanguage] = useState(localStorage.getItem('selectedLanguage') || 'en');
+  const [selectedLanguage, setSelectedLanguage] = useState(localStorage.getItem('selectedLanguage') || 'ru');
 
   const changeLanguage = lng => {
     i18n.changeLanguage(lng);
@@ -45,9 +45,9 @@ const Navbar = () => {
             </li>
             <li>
                 <select onChange={(e) => changeLanguage(e.target.value)} value={selectedLanguage}>
-                    <option value="en">🏴EN</option>
                     <option value="ru">🏴RU</option>
                     <option value="uz">🏳️UZ</option>
+                    <option value="en">🏴EN</option>
                 </select>
             </li>
         </ul>
